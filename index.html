@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Nives handles local app data, permissions, purchases, and support requests.">
+  <title>Nives Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f7f8fb; --panel:#fff; --text:#1f2937; --muted:#526174; --line:#dce2ea; --accent:#205fc5; --note:#eef4ff; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#101318; --panel:#181e27; --text:#edf2f8; --muted:#b3bfd0; --line:#394455; --accent:#9bc2ff; --note:#202e44; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .shell { width:min(100% - 36px,860px); margin:auto; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:26px 0; }
+    .wordmark { font-size:23px; font-weight:750; color:var(--text); text-decoration:none; }
+    nav { display:flex; flex-wrap:wrap; gap:22px; font-size:14px; }
+    a { color:var(--accent); text-underline-offset:4px; overflow-wrap:anywhere; }
+    nav a[aria-current="page"] { color:var(--text); font-weight:650; text-decoration-thickness:2px; }
+    a:hover { text-decoration-thickness:2px; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; border-radius:2px; }
+    .skip { position:absolute; top:-80px; left:18px; padding:8px 14px; background:var(--panel); z-index:1; }
+    .skip:focus { top:12px; }
+    main { padding:clamp(24px,5vw,48px); background:var(--panel); border:1px solid var(--line); border-radius:12px; }
+    h1,h2 { line-height:1.25; text-wrap:balance; }
+    h1 { margin:0 0 12px; font-size:clamp(30px,6vw,40px); letter-spacing:-.02em; }
+    h2 { margin:34px 0 12px; font-size:21px; }
+    p,ul { margin:0 0 16px; }
+    ul { padding-left:23px; }
+    li + li { margin-top:8px; }
+    .meta,footer { color:var(--muted); font-size:14px; }
+    .meta { margin-bottom:26px; }
+    .note { margin:24px 0; padding:18px 20px; background:var(--note); border-left:3px solid var(--accent); }
+    footer { padding:24px 0 36px; }
+    @media (max-width:480px) { header { gap:12px; } nav { gap:14px; } main { padding:24px 20px; } }
+    @media print { body { background:#fff; color:#000; } header,footer,.skip { display:none; } .shell { width:100%; } main { border:0; padding:0; } .note { border:1px solid #777; background:none; } a { color:inherit; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <header>
+      <a class="wordmark" href="index.html" aria-label="Nives privacy home">Nives</a>
+      <nav aria-label="Main navigation">
+        <a href="support.html">Support</a>
+        <a href="index.html" aria-current="page">Privacy</a>
+      </nav>
+    </header>
+    <main id="main">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: <time datetime="2026-10-18">October 18, 2026</time></p>
+      <p>Nives is a desktop app for system information, display and audio controls, keyboard usage statistics, screenshots, screen recording, and clipboard history. This policy explains how Nives and its developer handle information when you use the app or contact support. Features and permissions vary by operating system, hardware, and distribution channel.</p>
+      <div class="note"><strong>Your everyday app data stays on your device.</strong> Nives does not upload your clipboard history, keyboard statistics, screenshots, or recordings to the developer. It has no advertising SDKs, advertising tracking, or built-in cloud account or cloud sync service.</div>
+
+      <h2>1. Information used on your device</h2>
+      <ul>
+        <li><strong>System and hardware information:</strong> CPU, memory, GPU, temperature, battery and charging information, and available display, audio, and connected-device details. Device names, models, or identifiers may be read to identify hardware and provide the relevant controls.</li>
+        <li><strong>Clipboard history:</strong> when clipboard capture is enabled, new supported text and image changes may be saved locally, with details such as the time, content type, and size. Copied content can include personal or confidential information.</li>
+        <li><strong>Keyboard usage:</strong> when tracking is available and permitted, Nives processes keyboard input to produce aggregate counts of key presses, key combinations, and estimated observable text input. Its statistics database stores counts, rather than complete typed text or a replayable sequence of keystrokes. Clipboard history is a separate feature that can retain text you copy.</li>
+        <li><strong>Capture content:</strong> screenshots and recordings process the screen content you choose to capture. Recordings may include system audio or microphone input when you select those options and grant the required permissions. You can copy or save the resulting files.</li>
+        <li><strong>Preferences and license information:</strong> Nives stores settings such as language, appearance, shortcuts, clipboard retention, and supported display preferences. Store editions may also keep local receipt, entitlement, or trial-state information.</li>
+      </ul>
+
+      <h2>2. Local storage and security</h2>
+      <p>Preferences, clipboard records, and keyboard statistics are stored in a local SQLite database. Clipboard images are stored as local media files. Nives does not add application-level encryption to this database or its clipboard media. Their protection depends on your device, operating system, account permissions, and any disk encryption you enable.</p>
+      <p>Nives does not operate a server that stores or synchronizes this app data. Protect your device and backups, and choose capture settings appropriate for the information you handle. No software or storage method can guarantee absolute security.</p>
+
+      <h2>3. Permissions and your control</h2>
+      <p>Depending on your platform and the feature you use, the operating system may request permissions such as Screen Recording, Input Monitoring, Microphone, or access to save files. These permissions support the corresponding capture, keyboard statistics, audio, or file operations. Granting permission does not cause Nives to upload the content.</p>
+      <p>You can review or revoke permissions in your operating system settings. You can also change clipboard capture settings, choose which supported content types to keep, clear clipboard history, and clear keyboard statistics within Nives.</p>
+      <p>The clipboard's sensitive-content filter uses pattern matching. It cannot identify every password, token, or other sensitive item. Turn off the relevant capture options when you do not want new copied content retained.</p>
+
+      <h2>4. Network activity and platform services</h2>
+      <p>Nives does not send app-usage analytics or automatically upload crash reports, clipboard content, keyboard statistics, or capture content to the developer. Operating system diagnostics and store services are governed by your platform settings and the relevant provider's policies.</p>
+      <p>Store editions may use Apple App Store or Microsoft Store services for product information, purchases, receipts, trials, entitlement checks, and restoring purchases. The developer does not receive or store your payment card information through Nives.</p>
+      <p>Some standalone macOS editions offer an optional battery charge-limit helper. If you explicitly choose to install it, Nives may download a pinned helper archive from GitHub and verify its checksum. This download is not performed automatically at startup, and the Mac App Store edition does not offer that helper installation. A download connects to GitHub and its delivery services, which receive normal connection information such as your IP address.</p>
+
+      <h2>5. Email support</h2>
+      <p>If you choose to email <a href="mailto:itxiaoxia0809@gmail.com">itxiaoxia0809@gmail.com</a>, we receive the email address, message, and any attachments or technical details you send. We use this information to respond, investigate the issue, and follow up on your request. Sending an email is optional and is not required to use Nives.</p>
+      <p>The support page provides a standard email link. Your chosen email service and our email service process the correspondence to deliver and store it. Please send only the information needed for your request, and remove private content from screenshots or recordings before attaching them.</p>
+      <p>We retain support correspondence for as long as needed to handle the request and related follow-up, or to meet applicable legal obligations. You may request access, correction, or deletion of correspondence by contacting the same address.</p>
+
+      <h2>6. This website</h2>
+      <p>These support and privacy pages contain no analytics scripts, advertising trackers, feedback forms, or cookies added by us. Opening an email link starts your email application; it does not send a message automatically.</p>
+      <p>When these pages are hosted on GitHub Pages, GitHub logs visitors' IP addresses for security purposes. This website hosting is separate from Nives's local app data. See <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">GitHub Pages information</a> and the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a> for the host's practices.</p>
+
+      <h2>7. Retention and deletion</h2>
+      <p>Clipboard records follow the retention period you select. If you choose no expiry, records remain until you delete them. Keyboard statistics and preferences remain locally until you clear the applicable data or remove the app's stored data. Store-related trial and license records may be kept separately from clipboard and keyboard history.</p>
+      <p>You can clear clipboard history and keyboard statistics in the app. Removing permissions or turning off capture stops the relevant future access; it does not automatically delete existing history. Deleting the app alone may leave local data, depending on the operating system and installation method.</p>
+      <p>Copied or exported files, emails, device backups, and cloud folders you choose are managed separately. Clearing Nives history does not remove those copies, and ordinary deletion is not a guarantee of secure erasure. The developer cannot remotely access or delete data that exists only on your device.</p>
+
+      <h2>8. Sharing information</h2>
+      <p>We do not sell personal information or use your app data for advertising profiles. Information may leave your device when you choose to copy, export, share a file, contact support, use a store service, or initiate the optional helper download described above. Your selected apps and services then handle it under their own policies.</p>
+      <p>We may disclose information we hold, such as support correspondence, when required by applicable law or valid legal process. This does not give us access to your locally stored app history.</p>
+
+      <h2>9. Children's privacy</h2>
+      <p>Nives is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has sent us personal information through support, contact us so we can review and delete it as appropriate.</p>
+
+      <h2>10. Changes to this policy</h2>
+      <p>We may update this policy as the app or our practices change. Updates will appear on this page with a revised effective date.</p>
+
+      <h2>11. Contact</h2>
+      <p>For privacy questions or requests, email <a href="mailto:itxiaoxia0809@gmail.com?subject=Nives%20Privacy%20Request">itxiaoxia0809@gmail.com</a>. For help with the app, visit <a href="support.html">Nives Support</a>.</p>
+    </main>
+    <footer>Nives · Local desktop tools</footer>
+  </div>
+</body>
+</html>
